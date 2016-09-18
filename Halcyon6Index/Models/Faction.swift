@@ -56,13 +56,12 @@ internal class DataLoader {
           
           
           let components: [String] = dataAsString.components(separatedBy: "\n")
-          for com in components {
-            let subcomponents: [String] = com.components(separatedBy: "=")
-            for var sub in subcomponents {
-              if !sub.hasPrefix("\"") && !sub.hasSuffix("\"") {
-                sub.airQuotes()
-              }
+          for var com in components {
+            if !com.hasPrefix("\"") {
+              com.insert("\"", at: com.startIndex)
+//              let wordRanges = com.range
             }
+          
           }
 
           /*
