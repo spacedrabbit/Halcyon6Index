@@ -23,6 +23,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     self.window?.rootViewController = navVC
     self.window?.makeKeyAndVisible()
     
+    DataLoader.loadFactionData()
+    
     return true
   }
 

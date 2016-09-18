@@ -21,7 +21,10 @@ internal struct AppLayout {
 }
 
 internal struct AppColors {
-  
+  internal static let Diplomat: UIColor = hexStringToUIColor("#C6F362")
+  internal static let Engineer: UIColor = hexStringToUIColor("#F7C62C")
+  internal static let Science: UIColor = hexStringToUIColor("#6D8CFF")
+  internal static let Tatical: UIColor = hexStringToUIColor("#F56756")
 }
 
 internal struct AppFonts {
