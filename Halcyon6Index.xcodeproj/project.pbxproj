@@ -12,7 +12,23 @@
 		14D2CE181D8E41FF00F6383F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 14D2CE161D8E41FF00F6383F /* Main.storyboard */; };
 		14D2CE1A1D8E41FF00F6383F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 14D2CE191D8E41FF00F6383F /* Assets.xcassets */; };
 		14D2CE1D1D8E41FF00F6383F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 14D2CE1B1D8E41FF00F6383F /* LaunchScreen.storyboard */; };
+		14D2CE2F1D8E479E00F6383F /* PureLayout.framework.dSYM in Copy dysm Files */ = {isa = PBXBuildFile; fileRef = 14D2CE2D1D8E479E00F6383F /* PureLayout.framework.dSYM */; };
+		14D2CE371D8E48D200F6383F /* PureLayout.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14D2CE351D8E48D200F6383F /* PureLayout.framework */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		14D2CE2B1D8E475E00F6383F /* Copy dysm Files */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 16;
+			files = (
+				14D2CE2F1D8E479E00F6383F /* PureLayout.framework.dSYM in Copy dysm Files */,
+			);
+			name = "Copy dysm Files";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		14D2CE0F1D8E41FF00F6383F /* Halcyon6Index.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Halcyon6Index.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -22,6 +38,9 @@
 		14D2CE191D8E41FF00F6383F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		14D2CE1C1D8E41FF00F6383F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		14D2CE1E1D8E41FF00F6383F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		14D2CE2C1D8E479E00F6383F /* Cartography.framework.dSYM */ = {isa = PBXFileReference; lastKnownFileType = wrapper.dsym; name = Cartography.framework.dSYM; path = ../Carthage/Build/iOS/Cartography.framework.dSYM; sourceTree = "<group>"; };
+		14D2CE2D1D8E479E00F6383F /* PureLayout.framework.dSYM */ = {isa = PBXFileReference; lastKnownFileType = wrapper.dsym; name = PureLayout.framework.dSYM; path = ../Carthage/Build/iOS/PureLayout.framework.dSYM; sourceTree = "<group>"; };
+		14D2CE351D8E48D200F6383F /* PureLayout.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PureLayout.framework; path = Carthage/Build/iOS/PureLayout.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +48,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				14D2CE371D8E48D200F6383F /* PureLayout.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +60,7 @@
 			children = (
 				14D2CE111D8E41FF00F6383F /* Halcyon6Index */,
 				14D2CE101D8E41FF00F6383F /* Products */,
+				14D2CE331D8E48D200F6383F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,14 +75,32 @@
 		14D2CE111D8E41FF00F6383F /* Halcyon6Index */ = {
 			isa = PBXGroup;
 			children = (
-				14D2CE121D8E41FF00F6383F /* AppDelegate.swift */,
+				14D2CE381D8E493600F6383F /* Supporting Files */,
 				14D2CE141D8E41FF00F6383F /* ViewController.swift */,
+			);
+			path = Halcyon6Index;
+			sourceTree = "<group>";
+		};
+		14D2CE331D8E48D200F6383F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				14D2CE351D8E48D200F6383F /* PureLayout.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		14D2CE381D8E493600F6383F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				14D2CE2C1D8E479E00F6383F /* Cartography.framework.dSYM */,
+				14D2CE2D1D8E479E00F6383F /* PureLayout.framework.dSYM */,
+				14D2CE121D8E41FF00F6383F /* AppDelegate.swift */,
 				14D2CE161D8E41FF00F6383F /* Main.storyboard */,
 				14D2CE191D8E41FF00F6383F /* Assets.xcassets */,
 				14D2CE1B1D8E41FF00F6383F /* LaunchScreen.storyboard */,
 				14D2CE1E1D8E41FF00F6383F /* Info.plist */,
 			);
-			path = Halcyon6Index;
+			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,6 +113,8 @@
 				14D2CE0B1D8E41FF00F6383F /* Sources */,
 				14D2CE0C1D8E41FF00F6383F /* Frameworks */,
 				14D2CE0D1D8E41FF00F6383F /* Resources */,
+				14D2CE2B1D8E475E00F6383F /* Copy dysm Files */,
+				14D2CE301D8E47DF00F6383F /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -131,6 +172,23 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		14D2CE301D8E47DF00F6383F /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/PureLayout.framework",
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		14D2CE0B1D8E41FF00F6383F /* Sources */ = {
@@ -260,6 +318,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 3457AE227Q;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = Halcyon6Index/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = catthoughts.Halcyon6Index;
@@ -273,6 +335,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 3457AE227Q;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = Halcyon6Index/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = catthoughts.Halcyon6Index;
@@ -300,6 +366,7 @@
 				14D2CE231D8E41FF00F6383F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
