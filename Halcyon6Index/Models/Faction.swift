@@ -38,14 +38,34 @@ import Foundation
  description = "terran"
  */
 
+extension String {
+  internal mutating func airQuotes() {
+    self = self.trimmingCharacters(in: CharacterSet.whitespacesAndNewlines)
+    self = "\"" + self + "\""
+  }
+}
+
 internal class DataLoader {
   
   internal class func loadFactionData() {
     if let filePathString: String = Bundle.main.path(forResource: "yabbling", ofType: "lua") {
+      
       do {
         let fileData: Data = try Data(referencing: NSData(contentsOfFile: filePathString))
         if let dataAsString = String(data: fileData, encoding: .utf8) {
           
+          
+          let components: [String] = dataAsString.components(separatedBy: "\n")
+          for com in components {
+            let subcomponents: [String] = com.components(separatedBy: "=")
+            for var sub in subcomponents {
+              if !sub.hasPrefix("\"") && !sub.hasSuffix("\"") {
+                sub.airQuotes()
+              }
+            }
+          }
+
+          /*
           // this will work to separate out into an array of components which can be iterrated to find values based on keys
           let cleanedString = dataAsString.replacingOccurrences(of: "=", with: ":")
           let components = cleanedString.components(separatedBy: "\n")
@@ -63,7 +83,7 @@ internal class DataLoader {
 //          let json: Data = try JSONSerialization.data(withJSONObject: formatted, options: [])
           
           
-          
+          */
         }
       }
       catch {

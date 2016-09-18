@@ -37,6 +37,7 @@
 		14D2CE671D8E559C00F6383F /* Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14D2CE661D8E559C00F6383F /* Helpers.swift */; };
 		14D2CE691D8E56D200F6383F /* Faction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14D2CE681D8E56D200F6383F /* Faction.swift */; };
 		14D2CE6C1D8E5B2200F6383F /* yabbling.lua in Resources */ = {isa = PBXBuildFile; fileRef = 14D2CE6B1D8E5B2200F6383F /* yabbling.lua */; };
+		14D2CE6E1D8EEF5F00F6383F /* fake_terran.lua in Resources */ = {isa = PBXBuildFile; fileRef = 14D2CE6D1D8EEF5F00F6383F /* fake_terran.lua */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -87,6 +88,7 @@
 		14D2CE661D8E559C00F6383F /* Helpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Helpers.swift; path = Common/Helpers.swift; sourceTree = "<group>"; };
 		14D2CE681D8E56D200F6383F /* Faction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Faction.swift; path = Models/Faction.swift; sourceTree = "<group>"; };
 		14D2CE6B1D8E5B2200F6383F /* yabbling.lua */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = yabbling.lua; sourceTree = "<group>"; };
+		14D2CE6D1D8EEF5F00F6383F /* fake_terran.lua */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = fake_terran.lua; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -140,6 +142,7 @@
 		14D2CE381D8E493600F6383F /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				14D2CE6D1D8EEF5F00F6383F /* fake_terran.lua */,
 				14D2CE6B1D8E5B2200F6383F /* yabbling.lua */,
 				14D2CE411D8E4C1D00F6383F /* Fonts */,
 				14D2CE3A1D8E4AF600F6383F /* Things to never touch */,
@@ -283,6 +286,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				14D2CE5F1D8E4C3000F6383F /* Roboto-ThinItalic.ttf in Resources */,
+				14D2CE6E1D8EEF5F00F6383F /* fake_terran.lua in Resources */,
 				14D2CE5E1D8E4C3000F6383F /* Roboto-Thin.ttf in Resources */,
 				14D2CE641D8E4C3000F6383F /* RobotoCondensed-LightItalic.ttf in Resources */,
 				14D2CE1D1D8E41FF00F6383F /* LaunchScreen.storyboard in Resources */,
