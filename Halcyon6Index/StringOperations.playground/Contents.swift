@@ -79,5 +79,4 @@ if let firstSpace = name.characters.index(of: " ") {
 else {
   print("nope")
 }
-
 // Prints "Marie"

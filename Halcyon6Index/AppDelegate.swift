@@ -23,7 +23,20 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     self.window?.rootViewController = navVC
     self.window?.makeKeyAndVisible()
     
-    DataLoader.loadFactionData()
+    if let validData: Data = try! DataLoader.loadData(from: "yabbling.lua") {
+      if let validString: String = DataLoader.convert(data: validData) {
+        let json: JSON = DataLoader.parseIntoJson(string: validString)
+        print("json: \(json)")
+        
+        if JSONSerialization.isValidJSONObject(json) {
+          print("such valid, much wow")
+        }
+        
+        if let validFaction = Faction.init(from: json) {
+          print("created faction: \(validFaction)")
+        }
+      }
+    }
     
     return true
   }
